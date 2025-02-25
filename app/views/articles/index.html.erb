@@ -1,0 +1,11 @@
+<% @articles.each do |article| %>
+  <div class="card w-100 my-3">
+      <div class="card-header">
+        Articles
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><%= article.title %></li>
+        <li class="list-group-item"><%= article.content %></li>
+      </ul>
+  </div>
+<% end %>

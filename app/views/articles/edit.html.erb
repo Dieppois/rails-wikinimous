@@ -1,0 +1,12 @@
+<%= @article.title %>
+<%= @article.content %>
+
+<h1>Update Article</h1>
+
+<%= form_with model: @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
